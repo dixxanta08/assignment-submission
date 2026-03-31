@@ -39,9 +39,9 @@ const ListingDetailModal = ({ listing, onClose }) => {
           className="w-full bg-stone-100"
           style={{ height: "180px", position: "relative" }}
         >
-          {listing.image ? (
+          {listing.thumbnail_url ? (
             <img
-              src={listing.image}
+              src={`http://localhost:3000${listing.thumbnail_url}`}
               alt={listing.title}
               className="w-full h-full object-cover"
             />

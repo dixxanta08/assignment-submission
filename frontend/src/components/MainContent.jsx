@@ -24,8 +24,7 @@ const MainContent = ({ filterParams }) => {
   };
 
   return (
-    <main className="flex-1 min-h-screen pt-16 lg:ml-64">
-      {/* Tab bar */}
+    <main className="flex-1 min-h-screen pt-16 lg:ml-64 overflow-y-auto">
       <div className="border-b border-stone-200 px-8">
         <div className="flex gap-8">
           {tabs.map((tab) => (
